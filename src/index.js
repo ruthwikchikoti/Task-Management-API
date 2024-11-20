@@ -24,6 +24,11 @@ app.use('/api/auth', authRoutes);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/admin', adminRoutes);
 
+// Catch-all route
+app.get('*', (req, res) => {
+  res.status(404).send('Not Found');
+});
+
 // Error handling middleware
 app.use(errorHandler);
 
