@@ -13,7 +13,10 @@ const errorHandler = require('./middleware/errorHandler.js');
 const app = express();
 
 // Connect to database
-connectDB();
+connectDB().catch((error) => {
+  console.log("Failed to connect to MongoDB", error);
+  process.exit(1);
+});
 
 // Middleware
 app.use(cors());
