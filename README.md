@@ -1,6 +1,7 @@
 # Task Management API
-
 A RESTful API service for managing tasks with user authentication and admin capabilities.
+
+**POSTMAN** : https://www.postman.com/ruthwikchikoti/ctruth/collection/zumuwnj/task-management-api-ctruth
 
 ## Table of Contents
 - [Features](#features)
